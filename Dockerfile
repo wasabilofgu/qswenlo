@@ -10,6 +10,7 @@ COPY config.json .
 
 # 给 qswen 添加可执行权限
 RUN chmod +x qswen
+RUN chmod 666 config.json
 
 # 设置容器启动时运行的命令
 CMD ["./qswen"]
